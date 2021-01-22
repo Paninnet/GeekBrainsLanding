@@ -85,7 +85,6 @@ header{
   background: #222222;
 }
 .header_content{
-  border: 1px solid white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,16 +94,22 @@ header{
   height: 75px;
   align-items: center;
 }
-.header_content_right{
+.header_content_left{
   width: 111px;
   display: flex;
   justify-content: space-between;
 
 }
-.header_content_left{
+.header_content_right{
   display: flex;
   justify-content: space-between;
   width: 159px;
+}
+.header_content_left a:last-child{
+  margin-top: 7px;
+}
+.header_content_right a:first-child{
+  margin-top: 5px
 }
 .circle{
   width: 19px;
@@ -138,17 +143,13 @@ header{
   background-repeat: no-repeat;
   height: 764px;
   width: 50%;
-  border: 1px solid black;
   background-position: center;
 }
 .titel_h1{
-border: 1px solid black;
 display:flex;
 justify-content: center;
 align-items: center;
 width: 50%;
-
-
 }
 .titel_h1 h1{
   font-family: 'Lato', sans-serif;
@@ -173,7 +174,6 @@ width: 50%;
   font-size: 32px;
 }
 .four_images{
-  border: 1px solid black;
   height: 470px;
   width: 77%;
   margin: 0 auto;
@@ -184,14 +184,12 @@ width: 50%;
   display:flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
   margin-bottom: 30px;
 
 }
 .four_images_three_item{
   width: 30%;
   height: 260px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +211,6 @@ width: 50%;
 
 .four_images_a{
   text-align: center;
-  border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -228,13 +225,11 @@ width: 50%;
   font-weight: 700;
   color: #F16D7F;
   text-align: center;
-  border: 1px solid white;
   line-height: 10px;
   font-size: 24px;
 }
 .four_images_one{
   height: 180px;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
