@@ -241,6 +241,7 @@ width: 50%;
 .fetured_items{
   margin-top: 96px;
   text-align: center;
+  margin-bottom: 18px;
 }
 .fetured_items h2{
   font-family: 'Lato', sans-serif;
@@ -255,4 +256,112 @@ width: 50%;
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
+}
+/* Продолжаем верстать */
+.sixCards{
+  width: 77%;
+
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sixCards_item{
+  width: 31.5%;;
+
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sixCards_item_img1{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(oneofsix.png);
+}
+.sixCards_item_img2{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(toofsix.png);
+}
+.sixCards_item_img3{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(threeofsix.png);
+}
+.sixCards_item_img4{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(fourofsix.png);
+}
+.sixCards_item_img5{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(fiveofsix.png);
+}
+.sixCards_item_img6{
+  width: 100%;
+  min-height: 420px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-image: url(sixofsix.png);
+}
+
+
+.sixCards_item_text{
+  background-color: #F8F8F8;
+  margin-top: 25px;
+  padding-left: 18px;
+}
+.sixCards_item_a{
+  font-family: 'Lato', sans-serif;
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+
+  margin-bottom: 13px;
+}
+.sixCards_item_p{
+  display:block;
+
+  width: 95%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  margin-bottom: 18px;
+}
+.sixCards_item_price{
+  display: block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Lato', sans-serif;
+  color: #F16D7F;
 }
