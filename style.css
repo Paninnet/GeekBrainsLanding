@@ -305,7 +305,12 @@ width: 50%;
   background-image: url(./img/sixofsix.png);
 }
 
-/* hover effect */
+ul li{
+  list-style-type:none
+}
+
+
+/* hover effect Для карточек */
 .sixCards_item_img_text{
   display: flex;
   min-height: 100%;
@@ -330,10 +335,10 @@ width: 50%;
   color: #FFFFFF;
   padding-left: 20px;
 }
-.sixCards_item_img1:hover .sixCards_item_img_text{
+.sixCards_item_img1:hover .sixCards_item_img_text, .sixCards_item_img2:hover .sixCards_item_img_text, .sixCards_item_img3:hover .sixCards_item_img_text
+, .sixCards_item_img4:hover .sixCards_item_img_text, .sixCards_item_img5:hover .sixCards_item_img_text, .sixCards_item_img6:hover .sixCards_item_img_text{
   background-image: url(./img/oneofsix1.png);
   opacity: 1;
-
   width: 100%;
   min-height: 420px;
   background-position: center;
@@ -342,53 +347,32 @@ width: 50%;
 }
 .sixCards_item_img2:hover .sixCards_item_img_text{
   background-image: url(./img/toofsix1.png);
-  opacity: 1;
-
-  width: 100%;
-  min-height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
 }
 .sixCards_item_img3:hover .sixCards_item_img_text{
   background-image: url(./img/threeofsix1.png);
-  opacity: 1;
-
-  width: 100%;
-  min-height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
 }
 .sixCards_item_img4:hover .sixCards_item_img_text{
   background-image: url(./img/fourofsix1.png);
-  opacity: 1;
-
-  width: 100%;
-  min-height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
 }
 .sixCards_item_img5:hover .sixCards_item_img_text{
   background-image: url(./img/fiveofsix1.png);
-  opacity: 1;
-
-  width: 100%;
-  min-height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
 }
 .sixCards_item_img6:hover .sixCards_item_img_text{
   background-image: url(./img/sixofsix1.png);
-  opacity: 1;
-  width: 100%;
-  min-height: 420px;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
 }
+
+/* Меню */
+
+.titel:hover .menu{
+  display: block;
+}
+.menu{
+  width: 20%;
+  height: 764px;
+  border: 1px solid red;
+  display: none;
+}
+/* hover effect Для карточек */
 .sixCards_item_text{
   margin-top: 25px;
   padding-left: 18px;
