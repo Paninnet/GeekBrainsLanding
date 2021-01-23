@@ -277,62 +277,118 @@ width: 50%;
   justify-content: space-between;
   flex-direction: column;
 }
-.sixCards_item_img1{
-  width: 100%;
+.box_img{  width: 100%;
   min-height: 420px;
-
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
+
+}
+
+.sixCards_item_img1{
+
   background-image: url(./img/oneofsix.png);
 }
 .sixCards_item_img2{
-  width: 100%;
-  min-height: 420px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
   background-image: url(./img/toofsix.png);
 }
 .sixCards_item_img3{
-  width: 100%;
-  min-height: 420px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
   background-image: url(./img/threeofsix.png);
 }
 .sixCards_item_img4{
-  width: 100%;
-  min-height: 420px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
   background-image: url(./img/fourofsix.png);
 }
 .sixCards_item_img5{
-  width: 100%;
-  min-height: 420px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
   background-image: url(./img/fiveofsix.png);
 }
 .sixCards_item_img6{
-  width: 100%;
-  min-height: 420px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
   background-image: url(./img/sixofsix.png);
 }
 
+/* hover effect */
+.sixCards_item_img_text{
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.tobuy{
+  border: 1px solid white;
+  width: 138px;
+  height: 43px;
+  background-image: url(./img/telega.png);
+  background-position: center left 10px;;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Lato', sans-serif;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+.sixCards_item_img1:hover .sixCards_item_img_text{
+  background-image: url(./img/oneofsix1.png);
+  opacity: 1;
 
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.sixCards_item_img2:hover .sixCards_item_img_text{
+  background-image: url(./img/toofsix1.png);
+  opacity: 1;
+
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.sixCards_item_img3:hover .sixCards_item_img_text{
+  background-image: url(./img/threeofsix1.png);
+  opacity: 1;
+
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.sixCards_item_img4:hover .sixCards_item_img_text{
+  background-image: url(./img/fourofsix1.png);
+  opacity: 1;
+
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.sixCards_item_img5:hover .sixCards_item_img_text{
+  background-image: url(./img/fiveofsix1.png);
+  opacity: 1;
+
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.sixCards_item_img6:hover .sixCards_item_img_text{
+  background-image: url(./img/sixofsix1.png);
+  opacity: 1;
+  width: 100%;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
 .sixCards_item_text{
   margin-top: 25px;
   padding-left: 18px;
@@ -397,6 +453,7 @@ width: 50%;
   align-items: center;
   width: 30%;
 }
+
 .quality_content_img1{
   width: 45px;
   min-height: 32px;
