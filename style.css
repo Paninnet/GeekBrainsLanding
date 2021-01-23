@@ -140,7 +140,7 @@ header{
 
 }
 .titel_img{
-  background-image: url(../img/firstman.png);
+  background-image: url(./img/firstman.png);
   background-repeat: no-repeat;
   height: 764px;
   width: 50%;
@@ -199,15 +199,15 @@ width: 50%;
   background-size: cover;
 }
 .four_images_three_item:first-child{
-  background-image: url(../img/forWomenr.png);
+  background-image: url(./img/forWomenr.png);
 
 
   }
 .four_images_three_item:last-child{
-    background-image: url(../img/child.png);
+    background-image: url(./img/child.png);
   }
 .four_images_three_item:nth-child(2){
-    background-image: url(../img/man.png);
+    background-image: url(./img/man.png);
   }
 
 .four_images_a{
@@ -237,7 +237,7 @@ width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/long1.png);
+  background-image: url(./img/long1.png);
 }
 .fetured_items{
   margin-top: 96px;
@@ -284,7 +284,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/oneofsix.png);
+  background-image: url(./img/oneofsix.png);
 }
 .sixCards_item_img2{
   width: 100%;
@@ -293,7 +293,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/toofsix.png);
+  background-image: url(./img/toofsix.png);
 }
 .sixCards_item_img3{
   width: 100%;
@@ -302,7 +302,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/threeofsix.png);
+  background-image: url(./img/threeofsix.png);
 }
 .sixCards_item_img4{
   width: 100%;
@@ -311,7 +311,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/fourofsix.png);
+  background-image: url(./img/fourofsix.png);
 }
 .sixCards_item_img5{
   width: 100%;
@@ -320,7 +320,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/fiveofsix.png);
+  background-image: url(./img/fiveofsix.png);
 }
 .sixCards_item_img6{
   width: 100%;
@@ -329,7 +329,7 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
-  background-image: url(../img/sixofsix.png);
+  background-image: url(./img/sixofsix.png);
 }
 
 
@@ -401,14 +401,14 @@ width: 50%;
   width: 45px;
   min-height: 32px;
   margin-top: 103px;
-  background-image: url(../img/truck.png);
+  background-image: url(./img/truck.png);
   margin-bottom: 28px;
 }
 .quality_content_img2{
   width: 45px;
   min-height: 38px;
   margin-top: 103px;
-  background-image: url(../img/diskount.png);
+  background-image: url(./img/diskount.png);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 22px;
@@ -417,7 +417,7 @@ width: 50%;
   width: 45px;
   min-height: 38px;
   margin-top: 103px;
-  background-image: url(../img/crown.png);
+  background-image: url(./img/crown.png);
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 22px;
@@ -440,7 +440,7 @@ width: 50%;
 }
 .subscribe{
   height: 448px;
-  background-image: url(../img/subback.png);
+  background-image: url(./img/subback.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -464,7 +464,7 @@ width: 50%;
   margin-bottom: 30px;
   width: 96px;
   height: 96px;
-  background-image: url(../img/face.png);
+  background-image: url(./img/face.png);
 }
 .subscribe_content_left_p{
   text-align: center;
