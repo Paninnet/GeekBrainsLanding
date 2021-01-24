@@ -59,11 +59,12 @@ img {
 }
 
 * {
-  font-family: Roboto;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
 
 .wrapper {
   display: flex;
@@ -128,7 +129,7 @@ header{
   font-size: 12px;
   line-height: 14px;
   color: #FFFFFF;
-  font-family: 'Lato', sans-serif;
+
 }
 .titel{
   height: 764px;
@@ -153,7 +154,6 @@ align-items: center;
 width: 50%;
 }
 .titel_h1 h1{
-  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -169,7 +169,6 @@ width: 50%;
 }
 .titel_h1_pink{
   color: #F17485;
-  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -216,13 +215,11 @@ width: 50%;
   flex-wrap: wrap;
   flex-direction: column;
   flex-grow: 1;
-  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
 }
 .firstof4{
-  font-family: 'Lato', sans-serif;
   font-weight: 700;
   color: #F16D7F;
   text-align: center;
@@ -245,14 +242,12 @@ width: 50%;
   margin-bottom: 18px;
 }
 .fetured_items h2{
-  font-family: 'Lato', sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #222222;
   font-weight: 400;
 }
 .fetured_items p{
-  font-family: 'Lato', sans-serif;o;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -331,7 +326,6 @@ ul li{
   align-items: center;
   font-size: 14px;
   line-height: 17px;
-  font-family: 'Lato', sans-serif;
   color: #FFFFFF;
   padding-left: 20px;
 }
@@ -362,15 +356,65 @@ ul li{
 }
 
 /* Меню */
+.burger{
+  position: relative;
+  z-index: 30;
+}
 
 .titel:hover .menu{
-  display: block;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
 }
 .menu{
   width: 20%;
   height: 764px;
-  border: 1px solid red;
   display: none;
+  background-color: #FFFFFF;
+
+}
+.menu_x{
+position: relative;
+top: -20px;
+right: -20px;
+}
+.menu_content{
+  width: 70%;
+  margin-top: 37px;
+  display: flex;
+  flex-direction:row-reverse;
+}
+.title_menu{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+}
+.sex{
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+ul {
+
+  padding-left: 20px;
+}
+ul li{
+  margin-bottom: 11px;
+}
+ul li:last-child{
+  margin-bottom: 20px;
+}
+ul li a{
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+
 }
 /* hover effect Для карточек */
 .sixCards_item_text{
@@ -378,7 +422,6 @@ ul li{
   padding-left: 18px;
 }
 .sixCards_item_a{
-  font-family: 'Lato', sans-serif;
   display: block;
   font-size: 13px;
   line-height: 16px;
@@ -388,7 +431,6 @@ ul li{
 .sixCards_item_p{
   display:block;
   width: 95%;
-  font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -400,7 +442,6 @@ ul li{
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 19px;
-  font-family: 'Lato', sans-serif;
   color: #F16D7F;
 }
 .first_button{
@@ -417,7 +458,6 @@ ul li{
   font-size: 16px;
   line-height: 19px;
   color: #F26376;
-  font-family: 'Lato', sans-serif;
 }
 .quality{
 
@@ -467,7 +507,6 @@ ul li{
   font-size: 19.96px;
   line-height: 24px;
   color: #FBFBFB;
-  font-family: 'Lato', sans-serif;
   margin-bottom: 16px;
 }
 .quality_content_text_text{
@@ -476,7 +515,6 @@ ul li{
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
-  font-family: 'Lato', sans-serif;
   opacity: 0.8;
 }
 .subscribe{
@@ -513,7 +551,6 @@ ul li{
   line-height: 24px;
   text-align: center;
   color: #222224;
-  font-family: 'Lato', sans-serif;
 }
 .subscribe_content_right{
   display: flex;
@@ -528,7 +565,6 @@ ul li{
   line-height: 167.2%;
   text-align: center;
   color: #222224;
-  font-family: 'Lato', sans-serif;
 }
 .subscribe_content_right_p{
   font-weight: normal;
@@ -536,7 +572,6 @@ ul li{
   line-height: 167.2%;
   text-align: center;
   color: #222224;
-  font-family: 'Lato', sans-serif;
 }
 .inputButton{
   margin-top: 32px;
@@ -552,7 +587,6 @@ ul li{
   padding-left: 22px;
   font-size: 14px;
   line-height: 17px;
-  font-family: 'Lato', sans-serif;
   color: #222224;
   opacity: 0.67;
 }
@@ -565,7 +599,6 @@ ul li{
   line-height: 17px;
   text-align:center;
   color: #FFFFFF;
-  font-family: 'Lato', sans-serif;
 }
 .footer_content{
   width: 76%;
@@ -580,7 +613,6 @@ ul li{
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
-  font-family: 'Lato', sans-serif;
 }
 .footer_content_right{
   width: 150px;
