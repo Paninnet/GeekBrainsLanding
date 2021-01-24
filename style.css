@@ -398,6 +398,7 @@ right: -20px;
   line-height: 17px;
   color: #F16D7F;
   text-transform: uppercase;
+  display:block;
   margin-bottom: 12px;
 }
 ul {
@@ -416,6 +417,7 @@ ul li a{
   color: #6F6E6E;
 
 }
+
 /* hover effect Для карточек */
 .sixCards_item_text{
   margin-top: 25px;
