@@ -340,7 +340,7 @@ ul li{
 }
 .sixCards_item_img1:hover .sixCards_item_img_text, .sixCards_item_img2:hover .sixCards_item_img_text, .sixCards_item_img3:hover .sixCards_item_img_text
 , .sixCards_item_img4:hover .sixCards_item_img_text, .sixCards_item_img5:hover .sixCards_item_img_text, .sixCards_item_img6:hover .sixCards_item_img_text{
-  background-image: url(./img/oneofsix1.png);
+  background: rgba(58, 56, 56, 0.86);
   opacity: 1;
   width: 100%;
   min-height: 420px;
@@ -348,21 +348,7 @@ ul li{
   background-size: cover;
   background-repeat:no-repeat;
 }
-.sixCards_item_img2:hover .sixCards_item_img_text{
-  background-image: url(./img/toofsix1.png);
-}
-.sixCards_item_img3:hover .sixCards_item_img_text{
-  background-image: url(./img/threeofsix1.png);
-}
-.sixCards_item_img4:hover .sixCards_item_img_text{
-  background-image: url(./img/fourofsix1.png);
-}
-.sixCards_item_img5:hover .sixCards_item_img_text{
-  background-image: url(./img/fiveofsix1.png);
-}
-.sixCards_item_img6:hover .sixCards_item_img_text{
-  background-image: url(./img/sixofsix1.png);
-}
+
 
 /* Меню */
 .burger{
