@@ -133,7 +133,7 @@ header{
 }
 .titel{
   height: 764px;
-  background-color: #F1E4E6;
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin-bottom: 65px;
@@ -146,12 +146,21 @@ header{
   height: 764px;
   width: 50%;
   background-position: center;
+  background-color: rgba(113, 103, 105, 0.08);
+  position: relative;
+  z-index: 10;
+
+
 }
 .titel_h1{
 display:flex;
 justify-content: center;
 align-items: center;
 width: 50%;
+background-color: #F1E4E6;
+
+position:relative;
+z-index: 9;
 }
 .titel_h1 h1{
   font-style: normal;
@@ -357,32 +366,45 @@ ul li{
 
 /* Меню */
 .burger{
-  position: relative;
-  z-index: 30;
+
 }
 
-.titel:hover .menu{
+.titel:hover .menu_content{
   display: flex;
   flex-direction:column;
   align-items: center;
+  position:relative;
+  z-index: 10;
+  visibility:visible;
+
+
 }
+.titel:hover .menu{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
 .menu{
-  width: 20%;
+  width: 15%;
   height: 764px;
-  display: none;
-  background-color: #FFFFFF;
+  visibility:visible;
+
+  background-color: #F1E4E6;
 
 }
 .menu_x{
-position: relative;
-top: -20px;
-right: -20px;
+  position: relative;
+  bottom: 25px;
+  left: 65px;
 }
 .menu_content{
   width: 70%;
   margin-top: 37px;
   display: flex;
   flex-direction:row-reverse;
+  visibility: hidden;
 }
 .title_menu{
   font-weight: bold;
