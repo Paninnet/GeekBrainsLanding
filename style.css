@@ -370,6 +370,14 @@ ul li{
   display: flex;
   justify-content: center;
   box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  
+}
+.titel:hover .titel_img {
+  background-color: #7A7A7A;
+
+}
+.titel:hover .titel_h1{
+  background-color: #797273
 }
 
 .menu{
