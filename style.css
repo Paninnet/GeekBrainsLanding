@@ -132,7 +132,7 @@ header{
 
 }
 .titel{
-  height: 764px;
+  max-height: 764px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -148,8 +148,6 @@ header{
   width: 50%;
   background-position: center;
   background-color: rgba(113, 103, 105, 0.08);
-  position: relative;
-  z-index: 10;
 
 
 }
@@ -159,9 +157,6 @@ justify-content: center;
 align-items: center;
 width: 50%;
 background-color: #F1E4E6;
-
-position:relative;
-z-index: 9;
 }
 .titel_h1 h1{
   font-style: normal;
@@ -373,6 +368,7 @@ ul li{
 .titel:hover .titel_h1{
   background-color: #797273
 }
+
 .titel:hover .menu_x{
   visibility: visible;
 }
@@ -528,7 +524,7 @@ ul li a{
   opacity: 0.8;
 }
 .subscribe{
-  height: 448px;
+  min-height: 448px;
   background-image: url(./img/subback.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -637,4 +633,108 @@ ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.media:hover{
+background-color: #F16D7F;
+
+}
+
+
+/* Адаптив */
+@media (max-width:1025px) {
+  .header_content{
+    width: 95%;
+  }
+  .circle{
+    left: 96%;
+  }
+  .titel{
+    margin-bottom: 19px;
+  }
+  .titel_img{
+    height: 369px;
+    background-size: contain;
+  }
+  .menu{
+    display: none;
+  }
+  .titel_h1_bold{
+    font-size: 44px;
+
+  }
+  .titel_h1 h1, .titel_h1_pink{
+    font-size: 24px;
+    line-height: 44px;
+  }
+  .four_images{
+    width: 95%;
+  }
+  .four_images_three_item{
+    width: 31%;
+  }
+  .four_images_three{
+    margin-bottom: 20px;
+  }
+  .fetured_items{
+    margin-top: 154px;
+    margin-bottom: 54px;
+  }
+  .sixCards{
+    width: 95%;
+  }
+  .sixCards_item{
+    width: 48.5%;
+    margin-top: 17px;
+  }
+  .first_button{
+    margin-bottom: 65px;
+  }
+  .quality_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quality_content{
+    height: 610px;
+
+  }
+  .quality_images, .quality_content_img1{
+    margin-top: 48px;
+  }
+  .quality_images{
+    margin-top: 28px;
+  }
+.quality_content_item:last-child{
+    margin-bottom: 64px;
+  }
+  .quality_content_text_text{
+
+    width: 360px;
+  }
+  .subscribe{
+    background-position:  0px 0px;
+    background-color: (244, 244, 244, 0.7);
+  }
+  .subscribe_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe_img{
+    margin-top: 53px;
+  }
+  .subscribe_content_left_p{
+    width: 359px;
+  }
+  .subscribe_content_right{
+      margin-top: 48px;
+  }
+  .inputButton{
+    margin-top: 27px;
+    margin-bottom: 140px;
+  }
+  .footer_content{
+    width: 95%;
+  }
+
 }
