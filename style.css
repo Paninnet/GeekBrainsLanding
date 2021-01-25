@@ -634,6 +634,11 @@ ul li a{
   justify-content: center;
   align-items: center;
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 .media:hover{
 background-color: #F16D7F;
 
@@ -711,11 +716,22 @@ background-color: #F16D7F;
 
     width: 360px;
   }
+<<<<<<< Updated upstream
   .quality_content_text_title{
     text-align: center;
     border: 1px solid red;
     max-width: 155px;
   }
+=======
+<<<<<<< Updated upstream
+=======
+  .quality_content_text_title{
+    text-align: center;
+   
+    max-width: 155px;
+  }
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   .subscribe{
     background-position:  0px 0px;
     background-color: (244, 244, 244, 0.7);
@@ -743,3 +759,7 @@ background-color: #F16D7F;
   }
 
 }
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
