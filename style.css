@@ -660,6 +660,10 @@ fill:black;
     font-size: 24px;
     line-height: 44px;
   }
+  .titel_h1{
+    padding-left: 0px;
+    justify-content: center;
+  }
   .four_images{
     width: 95%;
   }
