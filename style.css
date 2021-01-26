@@ -745,6 +745,14 @@ fill:black;
     margin-top: 27px;
     margin-bottom: 140px;
   }
+  .inputMail {
+    background: #8f8f8f;
+
+  }
+  input.inputMail::placeholder{
+    color:#E1E1E1;
+  }
+
   .footer_content{
     width: 95%;
   }
