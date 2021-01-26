@@ -85,7 +85,9 @@ footer {
 }
 header{
   background: #222222;
+  position: relative;
 }
+
 .header_content{
   display: flex;
   flex-direction: row;
@@ -153,10 +155,11 @@ header{
 }
 .titel_h1{
 display:flex;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 width: 50%;
 background-color: #F1E4E6;
+padding-left: 64px;
 }
 .titel_h1 h1{
   font-style: normal;
@@ -351,38 +354,28 @@ ul li{
 
 }
 
-.titel:hover  .menu_content{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  visibility: visible;
-}
-.titel:hover .menu{
+.hover:hover ~ .menu{
   background-color: white;
   box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-}
-.titel:hover .titel_img {
-  background-color: #7A7A7A;
-
-}
-.titel:hover .titel_h1{
-  background-color: #797273
-}
-
-.titel:hover .menu_x{
+  right: 0;
   visibility: visible;
+
 }
+
 
 .menu{
-  width: 15%;
+  width: 14%;
   height: 764px;
   background-color: #F1E4E6;
   display: flex;
   justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  visibility:hidden;
 }
 .menu_x{
   position: relative;
-  visibility: hidden;
   margin-top: 16px;
 }
 
@@ -391,7 +384,6 @@ ul li{
   margin-top: 37px;
   display: flex;
   flex-direction:row;
-  visibility: hidden;
 }
 .title_menu{
   font-weight: bold;
@@ -633,11 +625,13 @@ ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .media:hover{
 background-color: #F16D7F;
-
+fill:black;
 }
+
 
 
 /* Адаптив */
