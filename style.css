@@ -261,10 +261,10 @@ padding-left: 64px;
   line-height: 17px;
   color: #9F9F9F;
 }
+
 /* Продолжаем верстать */
 .sixCards{
   width: 77%;
-
 
   margin: 0 auto;
   display: flex;
@@ -350,19 +350,12 @@ ul li{
 
 
 /* Меню */
-.burger{
-
-}
-
 .hover:hover ~ .menu{
   background-color: white;
   box-shadow: 0 3px 10px rgba(0,0,0,0.5);
   right: 0;
   visibility: visible;
-
 }
-
-
 .menu{
   width: 14%;
   height: 764px;
