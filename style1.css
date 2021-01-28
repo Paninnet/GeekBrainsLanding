@@ -853,3 +853,16 @@ fill:black;
   margin-bottom: 9px;
 }
 /* --------Верстаю catalog.html------ */
+.arrivals{
+  background: #F8F3F4;
+
+}
+.arrivals_container{
+  width: 77%;
+  display: flex;
+  flex-direction: row;
+}
+.bread_crumbs{
+  display: flex;
+  flex-direction: row;
+}
