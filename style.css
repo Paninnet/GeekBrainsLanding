@@ -1029,15 +1029,17 @@ fill:black;
   }
   .optional_filter a{
     font-size: 12px;
-    margin-right: 13px;
+    margin-right: 10px;
+
   }
     .optional_filter a:last-child{
       margin-right: 0px;
     }
   .filet_mobile{
     display: block;
-    width: 37px;
+    width: 30px;
     height: 25px;
+
   }
   .filter{
     height: 80px;
