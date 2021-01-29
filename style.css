@@ -922,11 +922,19 @@ fill:black;
   background-position: center;
 
 }
+.optional_filter{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
 .optional_filter a{
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
   margin-right: 28px;
+}
+.optional_filter a:last-child{
+  margin-right: 0px;
 }
 .optional_filter a:last-child{
   margin-right: 0px;
@@ -987,15 +995,18 @@ fill:black;
 .num1{
   color: #EF5B70;
   margin-right: 20px;
+  text-decoration: underline;
 }
 .back, .forward{
   position: relative;
   top: 2px;
   margin: 0px 20px 0px 20px;
   text-decoration: none;
+
 }
 .num, .num6, .last{
   color: #E2E2E2;
+  text-decoration: underline;
 }
 @media (max-width:1025px){
   .arrivals_container{
@@ -1027,6 +1038,7 @@ fill:black;
   .main_filter{
     display: none;
   }
+
   .optional_filter a{
     font-size: 12px;
     margin-right: 10px;
@@ -1043,6 +1055,11 @@ fill:black;
   }
   .filter{
     height: 80px;
+  }
+  .filter_content{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
   }
   .pages{
     margin-top: 42px;
