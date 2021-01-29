@@ -903,7 +903,7 @@ fill:black;
 .filter_content{
   display: flex;
   flex-direction: row;
-  width: 60%;
+  width: 70%;
   margin-top: 51px;
   margin-bottom: 65px;
   justify-content: space-between;
@@ -913,6 +913,8 @@ fill:black;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+  position: relative;
+  width: 45.2%;
 }
 .main_filter::after{
   content: " ";
@@ -920,7 +922,6 @@ fill:black;
   padding-right: 40px;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 .optional_filter{
   display: flex;
@@ -1008,6 +1009,91 @@ fill:black;
   color: #E2E2E2;
   text-decoration: underline;
 }
+
+/* --------hover для .filter----------- */
+.main_filter:hover ~.main_filter_options{
+  display: block;
+  background-color: #FFFFFF;
+}
+.main_filter_options{
+  box-shadow: 1px 1px 10px black;
+  position: absolute;
+  width: 24.2%;
+  height: 80%;
+  display: none;
+}
+.main_filter_options_content{
+  display: flex;
+  flex-direction: column;
+  /* width: 285px; */
+}
+.main_filter1{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+.main_filter1::after{
+  content: " ";
+  background-image: url(./img/filter.svg);
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #EF5B70;
+}
+.main_options{
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  font-weight: 400;
+  border-left: 5px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  padding-left: 17px;
+  padding-bottom: 11px;
+  margin-top: 26px;
+  margin-left: 16px;
+}
+.options, .options1{
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-left: 33px;
+}
+.options1{
+  margin-top: 24px;
+}
+.options{
+  margin-top: 11px;
+}
+.main_options:first-child{
+  margin-top: 24px;
+}
+
+.size:hover ~.size_opportunity{
+  display: block;
+
+}
+.size_opportunity{
+  position:absolute;
+  box-shadow: 1px 1px 10px black;
+  width: 65px;
+  background-color: white;
+  display: none;
+}
+.size_opportunity input{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.size_opportunity input:last-child{
+  margin-bottom: 12px;
+}
+
+
+
+
 @media (max-width:1025px){
   .arrivals_container{
     width: 95%;
@@ -1022,6 +1108,9 @@ fill:black;
     width: 100%;
     margin-top: 28px;
     margin-bottom: 43px;
+  }
+  .main_filter:hover ~.main_filter_options{
+    display: none;
   }
 }
 @media (max-width:668px) {
