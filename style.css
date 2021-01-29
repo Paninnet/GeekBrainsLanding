@@ -994,6 +994,9 @@ fill:black;
   margin: 0px 20px 0px 20px;
   text-decoration: none;
 }
+.num, .num6, .last{
+  color: #E2E2E2;
+}
 @media (max-width:1025px){
   .arrivals_container{
     width: 95%;
@@ -1026,8 +1029,11 @@ fill:black;
   }
   .optional_filter a{
     font-size: 12px;
-    margin-right: 18px;
+    margin-right: 13px;
   }
+    .optional_filter a:last-child{
+      margin-right: 0px;
+    }
   .filet_mobile{
     display: block;
     width: 37px;
