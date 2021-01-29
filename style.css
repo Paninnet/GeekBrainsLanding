@@ -835,7 +835,6 @@ fill:black;
 .subscribe_content_right_p{
   font-size: 14px;
   line-height: 21px;
-
 }
 .subscribe_content{
   width: 95%;
@@ -843,13 +842,202 @@ fill:black;
 .footer_content{
   display: flex;
   flex-direction: column-reverse;
-
 }
 .footer_content_right{
   margin-top: 43px;
   margin-bottom: 50px;
 }
+}
 .footer_text{
   margin-bottom: 9px;
 }
 /* --------Верстаю catalog.html------ */
+.filet_mobile{
+  display: none;
+}
+.arrivals{
+  background-color: #F8F3F4;
+}
+.arrivals_container{
+  width: 77%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bread_crumbs{
+  display: flex;
+  flex-direction: row;
+}
+.new_arrivals{
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  margin: 60px 0px;
+}
+.bread_crumbs a{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform:uppercase;
+}
+.home, .men{
+  color: #636363;
+}
+.arri{
+  color:#F16D7F;
+  font-weight: bold;
+}
+.slash{
+  margin: 0px 4px;
+  font-size: 16px;
+}
+.filter{
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  width: 77%;
+}
+.filter_content{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  margin-top: 51px;
+  margin-bottom: 65px;
+  justify-content: space-between;
+}
+.main_filter{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.main_filter::after{
+  content: " ";
+  background-image: url(./img/filter.svg);
+  padding-right: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.optional_filter a{
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-right: 28px;
+}
+.optional_filter a:last-child{
+  margin-right: 0px;
+}
+.optional_filter a::after{
+  content: " ";
+  background-image: url(./img/galka.svg);
+  padding-right: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section_cards_item_img2_9{
+  background-image: url(./img/twoofnine.png);
+}
+.section_cards_item_img5_9{
+  background-image: url(./img/fiveofnine.png);
+}
+.section_cards_item_img6_9{
+  background-image: url(./img/sixofnine.png);
+}
+.section_cards_item_img7_9{
+  background-image: url(./img/sevenofnine.png);
+}
+.section_cards_item_img8_9{
+  background-image: url(./img/eightofnine.png);
+}
+.section_cards_item_img9_9{
+  background-image: url(./img/nineofnine.png);
+}
+.section_cards_item:first-child, .section_cards_item:nth-child(2), .section_cards_item:nth-child(3){
+  margin-top: 0px;
+}
+.pages{
+  margin-top: 49px;
+  margin-bottom: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages_content{
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+}
+.pages_content a{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.first {
+  color: #EF5B70;
+}
+.num {
+   margin-right: 20px;
+}
+.num1{
+  color: #EF5B70;
+  margin-right: 20px;
+}
+.back, .forward{
+  position: relative;
+  top: 2px;
+  margin: 0px 20px 0px 20px;
+  text-decoration: none;
+}
+@media (max-width:1025px){
+  .arrivals_container{
+    width: 95%;
+  }
+  .section_cards_item:nth-child(3){
+    display: none;
+  }
+  .filter{
+    width: 95%;
+  }
+  .filter_content{
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 43px;
+  }
+}
+@media (max-width:668px) {
+  .arrivals_container{
+    display:flex;
+    flex-direction: column;
+  }
+  .new_arrivals{
+    margin: 24px 0px 32px;
+  }
+  .bread_crumbs{
+    margin-bottom: 46px;
+  }
+  .main_filter{
+    display: none;
+  }
+  .optional_filter a{
+    font-size: 12px;
+    margin-right: 18px;
+  }
+  .filet_mobile{
+    display: block;
+    width: 37px;
+    height: 25px;
+  }
+  .filter{
+    height: 80px;
+  }
+  .pages{
+    margin-top: 42px;
+    margin-bottom: 64px;
+  }
+}
