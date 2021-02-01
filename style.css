@@ -852,13 +852,16 @@ fill:black;
   margin-bottom: 9px;
 }
 /* --------Верстаю catalog.html------ */
+.upper{
+  text-transform: uppercase;
+}
 .filet_mobile{
   display: none;
 }
-.arrivals{
+.section_arrivals{
   background-color: #F8F3F4;
 }
-.arrivals_container{
+.section_arrivals_container{
   width: 77%;
   margin: 0 auto;
   display: flex;
@@ -875,6 +878,7 @@ fill:black;
   line-height: 29px;
   color: #F16D7F;
   margin: 60px 0px;
+  text-transform: uppercase;
 }
 .bread_crumbs a{
   font-weight: 300;
@@ -1095,7 +1099,7 @@ fill:black;
 
 
 @media (max-width:1025px){
-  .arrivals_container{
+  .section_arrivals_container{
     width: 95%;
   }
   .section_cards_item:nth-child(3){
@@ -1114,7 +1118,7 @@ fill:black;
   }
 }
 @media (max-width:668px) {
-  .arrivals_container{
+  .section_arrivals_container{
     display:flex;
     flex-direction: column;
   }
