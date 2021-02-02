@@ -104,17 +104,27 @@ header{
   justify-content: space-between;
 
 }
-.header_content_right{
-  display: flex;
-  justify-content: space-between;
-  width: 159px;
-}
+
 .header_content_left a:last-child{
   margin-top: 7px;
 }
-.header_content_right a:first-child{
-  margin-top: 5px
+
+.section_header_icons{
+  padding-left: 0px;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 159px;
 }
+.section_header_icons li{
+  padding-left: 0px;
+
+}
+.burg, .prof, .teleg{
+  margin-bottom: 0px;
+}
+
 .circle{
   width: 19px;
   height: 19px;
@@ -398,10 +408,10 @@ ul {
 
   padding-left: 20px;
 }
-ul li{
+.menu_item{
   margin-bottom: 11px;
 }
-ul li:last-child{
+ul li.menu_item:last-child{
   margin-bottom: 20px;
 }
 ul li a{
@@ -755,7 +765,7 @@ fill:black;
   .profile,.cart,.circle{
     display: none;
   }
-  .header_content_right{
+  ul.section_header_icons {
     display: flex;
     justify-content: flex-end;
   }
@@ -1097,12 +1107,11 @@ fill:black;
 
 
 
-
 @media (max-width:1025px){
   .section_arrivals_container{
     width: 95%;
   }
-  .section_cards_item:nth-child(3){
+  .catalog_none{
     display: none;
   }
   .filter{
@@ -1159,3 +1168,6 @@ fill:black;
     margin-bottom: 64px;
   }
 }
+/* -------Верстаю product.html----- */
+
+/* header icons right */
