@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+* {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+footer {
+  display: flex;
+}
+header{
+  background: #222222;
+}
+.header_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 77%;
+  margin: 0 auto;
+  height: auto;
+  height: 75px;
+  align-items: center;
+}
+.header_content_left{
+  width: 111px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.header_content_right{
+  display: flex;
+  justify-content: space-between;
+  width: 159px;
+}
+.header_content_left a:last-child{
+  margin-top: 7px;
+}
+.header_content_right a:first-child{
+  margin-top: 5px
+}
+.circle{
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 20px;
+  left: 87.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle p{
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+}
+.titel{
+  height: 764px;
+  background-color: #F1E4E6;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 65px;
+
+
+}
+.titel_img{
+  background-image: url(firstman.png);
+  background-repeat: no-repeat;
+  height: 764px;
+  width: 50%;
+  background-position: center;
+}
+.titel_h1{
+display:flex;
+justify-content: center;
+align-items: center;
+width: 50%;
+}
+.titel_h1 h1{
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #222222;
+  border-left: 12px solid #F16D7F;
+  padding-left:16px;
+  min-height: 103px;
+}
+.titel_h1_bold{
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+}
+.titel_h1_pink{
+  color: #F17485;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+.four_images{
+  height: 470px;
+  width: 77%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:column;
+}
+.four_images_three{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+.four_images_three_item{
+  width: 30%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.four_images_three_item:first-child{
+  background-image: url(forWomenr.png);
+
+
+  }
+.four_images_three_item:last-child{
+    background-image: url(child.png);
+  }
+.four_images_three_item:nth-child(2){
+    background-image: url(man.png);
+  }
+
+.four_images_a{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.firstof4{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #F16D7F;
+  text-align: center;
+  line-height: 10px;
+  font-size: 24px;
+}
+.four_images_one{
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(long1.png);
+}
+.fetured_items{
+  margin-top: 96px;
+  text-align: center;
+}
+.fetured_items h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+  font-weight: 400;
+}
+.fetured_items p{
+  font-family: 'Lato', sans-serif;o;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
