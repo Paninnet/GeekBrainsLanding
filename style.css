@@ -73,9 +73,9 @@ img {
 }
 
 .content {
-  flex: 1 1 auto;
+  flex: 1 0 auto;
   width: 100%;
-  margin: 0 auto;
+
 }
 
 
@@ -83,6 +83,8 @@ footer {
   display: flex;
   background-color: #222224;
 }
+
+
 header{
   background: #222222;
   position: relative;
@@ -524,6 +526,7 @@ ul li a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.97;
 
 }
 .subscribe_content{
@@ -1347,4 +1350,331 @@ fill:black;
     margin-bottom: 64px;
   }
 
+}
+/* --------Верстаю cart.html------- */
+
+
+.shoppint_text{
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  margin: 60px 0px;
+  text-transform: uppercase;
+}
+.shopping_cart_top {
+    background-color: #F8F3F4;
+}
+
+.shopping_cart_container_top {
+    width: 77%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.shopping_cart_content{
+  width: 77%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+.products_cart{
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+.products_cart_item{
+  height: 300px;
+  box-shadow: 10px 10px 10px rgb(143, 143, 143);
+  display: flex;
+  flex-direction: row;
+}
+.products_cart_item_img{
+  width: 240px;
+  background-image: url(./img/threeofsix.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nm{
+  background-image: url(./img/twoofnine.png);
+}
+.products_cart_item_text{
+  padding: 22px 0px 0px 31px;
+  width: 60%;
+}
+.product_description{
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  text-transform: uppercase;
+  max-width: 220px;
+  margin-bottom: 42px;
+}
+.product_price_color{
+  color: #F16F82;
+}
+
+.desc{
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+  margin-bottom: 6px;
+  display:flex;
+
+}
+.quantity_item{
+  border: 1px solid #EAEAEA;
+  margin-left: 24px;
+  width: 43px;
+  display:block;
+  text-align: center;
+}
+.product_cross{
+  padding: 28px 22px 0px 0px;
+}
+.products_cart_item:first-child{
+  margin-bottom: 40px;
+}
+.product_button_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.prod_button{
+  border: 1px solid #A4A4A4;
+  width: 234px;
+  height: 49px;
+  background-color: white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.prod_button:hover{
+  box-shadow: 3px 3px 10px black;
+}
+.prod_button:active{
+  box-shadow: 7px 7px 10px black;
+  position: relative;
+  top: 2px;
+}
+.shipping{
+  width: 33%;
+
+}
+.shipping_adress{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.adress{
+  width: 358px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  display: block;
+  margin-bottom: 21px;
+  padding: 12px 0px 16px 17px;
+}
+.adress:nth-child(3){
+  margin-bottom: 24px;
+}
+.quote{
+  border: 1px solid #A4A4A4;
+  width: 100px;
+  height: 34px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  background-color: white;
+  margin-bottom: 57px;
+}
+
+.quote:hover{
+  box-shadow: 3px 3px 10px black;
+}
+.quote:active{
+  box-shadow: 7px 7px 10px black;
+  position: relative;
+  top: 2px;
+}
+
+.cost{
+  width: 360px;
+  height: 214px;
+  background: #F5F3F3;
+  display: flex;
+  justify-content: center;
+
+}
+.cost_content{
+  width: 80%;
+}
+.sub_total{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  margin-top: 39px;
+  margin-bottom: 12px;
+}
+.total_price{
+  display: block;
+  margin-left: 20px;
+}
+.grand_total{
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+.total_price_grand{
+  color: #F16D7F;
+  display: block;
+  margin-left: 20px;
+}
+.cost_hr{
+  display:block;
+  background: #E2E2E2;
+  height: 1px;
+  margin-bottom: 17px;
+}
+.to_check{
+  width: 100%;
+  height: 50px;
+  background: #F16D7F;
+  text-align: center;
+  /* font-weight: 300; */
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.to_check:hover{
+  box-shadow: 3px 3px 10px black;
+}
+.to_check:active{
+  box-shadow: 7px 7px 10px black;
+  position: relative;
+  top: 2px;
+}
+
+@media (max-width:1110px) {
+  .shopping_cart_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .shipping{
+    margin-top: 64px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .products_cart{
+    width: 100%;
+  }
+  .products_cart_item:nth-child(2){
+    margin-bottom: 62px;
+  }
+  .product_button_content{
+    margin-top: 62px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cost{
+    width: 47%;
+    margin-top: 37px;
+  }
+
+}
+
+@media (max-width:1025px) {
+.shopping_cart_container_top{
+  width: 95%;
+}
+.shopping_cart_content{
+  margin-top: 59px;
+  width: 95%;
+}
+}
+@media (max-width:668px) {
+  .shopping_cart_container_top{
+    justify-content: center;
+  }
+  .shopping_cart_content{
+    margin-top: 39px;
+    margin-bottom: 96px;
+  }
+  .products_cart_item{
+    height: 188px;
+  }
+  .products_cart_item_text{
+    padding: 13px 5px 0px 17px;
+  }
+  .product_description{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 25px;
+    width: 148px;
+  }
+  .product_cross{
+    padding: 13px 12px 0px;
+  }
+  .desc{
+    font-size: 14px;
+    line-height: 17px
+  }
+  .products_cart_item:first-child {
+    margin-bottom: 32px;
+}
+.product_button_content{
+  width: 100%
+}
+.prod_button{
+  width: 48%;
+  height: 32px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: capitalize;
+}
+.products_cart_item:nth-child(2) {
+    margin-bottom: 30px;
+}
+.shipping{
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.adress{
+  width: 353px;
+}
+.quote{
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+.cost{
+  width: 100%;
+  margin-top: 48px;
+}
 }
