@@ -1418,6 +1418,8 @@ fill:black;
 }
 .product_price_color{
   color: #F16F82;
+  display: block;
+  margin-left: 4px;
 }
 
 .desc{
