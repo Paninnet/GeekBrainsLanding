@@ -123,8 +123,62 @@ header{
   padding-left: 0px;
 
 }
-.burg, .prof, .teleg{
-  margin-bottom: 0px;
+/* make the burrrrrger */
+.burg{
+  /* border: 1px solid tomato; */
+  width: 37px;
+  height: 30px;
+  display: block;
+
+}
+.norm_burger{
+  /* background-color: green; */
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color:#222222;
+  /* border: 1px solid white; */
+  position: relative;
+}
+.norm_burger::before{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #E8E8E8;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+
+}
+.norm_burger::after{
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #E8E8E8;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+
+}
+.middel-line{
+  width: 100%;
+  height: 3px;
+  background-color: #E8E8E8;
+  position: absolute;
+  top: 13.5px;
+  left: 0px;
+}
+.norm_burger:hover .middel-line{
+  display: none;
+}
+ .norm_burger:hover::after{
+  transform: rotate(45deg);
+  top: 16px;
+
+}
+.norm_burger:hover::before{
+ transform: rotate(-45deg);
+ top: 15px;
 }
 
 .circle{
