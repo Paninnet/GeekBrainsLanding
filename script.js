@@ -1,0 +1,29 @@
+function clik() {
+  let a= document.querySelector('.norm_burger')
+  let b= document.querySelector('.menu')
+  let c= document.querySelector('.menu_cross')
+
+  a.classList.toggle("activee")
+  b.classList.toggle("activee")
+  c.classList.toggle("activee")
+
+}
+function clike() {
+    let d= document.querySelector('.search_button')
+    d.classList.toggle("find")
+}
+
+function deletee() {
+  let a =document.querySelector('.products_cart_item')
+  a.remove(a);
+
+}
+function delet() {
+  let a =document.querySelector('.prod_2')
+  a.remove(a);
+}
+
+function delete_all() {
+  let a =document.querySelector('.products_cart')
+  a.remove(a);
+}

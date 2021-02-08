@@ -14,10 +14,14 @@
           <div class="header_content">
             <div class="header_content_left">
               <a href="index.html"><img src="img/ok.png" alt="Главная"></a>
-              <a href="#"><img src="img/search.png" alt="Поиск"></a>
+              <div class="search_icon">
+                <button onclick="clike()" class="search_button" type="button" name="button"><img class="search_img" src="img/search.png" alt="Поиск"></a></button>
+                <input class="search_input" type="search" name="" value="">
+              </div>
+
             </div>
             <ul class="section_header_icons hover">
-              <li class="burg"> <button class="norm_burger" type="button" name="button">
+              <li class="burg"> <button  class="norm_burger" onclick="clik()" type="button" name="button">
                 <span class="middel-line"></span>
               </button> </li>
               <li class="prof"><a href="#"><img src="img/icon.png" class="profile" alt="Профиль"></a></li>
@@ -26,6 +30,7 @@
             <div class="circle">
               <p>5</p>
             </div>
+            <!-- Это меню должно высвечиваться в .title при .burger:hover-->
             <div class="menu">
               <div class="menu_content">
                 <div class="menu_content_text">
@@ -58,7 +63,7 @@
 
               </div>
               <div class="menu_x">
-                <a href="#"> <img src="img/x.png"  alt=""> </a>
+              <button class="menu_cross" onclick="clik()" type="button" name="button"><img src="img/x.png"  alt=""></button>
               </div>
             </div>
           </div>
@@ -242,6 +247,6 @@
       </footer>
 
     </div>
-
+    <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

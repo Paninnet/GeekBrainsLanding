@@ -88,6 +88,7 @@ footer {
 header{
   background: #222222;
   position: relative;
+  z-index: 20;
 }
 
 .header_content{
@@ -101,7 +102,7 @@ header{
   align-items: center;
 }
 .header_content_left{
-  width: 111px;
+
   display: flex;
   justify-content: space-between;
 
@@ -123,21 +124,41 @@ header{
   padding-left: 0px;
 
 }
+.search_button{
+  background-color: white;
+  margin-left: 40px;
+}
+.search_img{
+  background-color: #222222;
+  height: 39px;
+}
+.search_input{
+  border: 1px solid blue;
+  height: 39px;
+  position: absolute;
+  left: 300px;
+  top: -1000px;
+  width: 250px;
+  padding-left: 10px;
+  transition-duration: 1s;
+}
+.search_button.find +.search_input{
+  border: 2px solid #F16D7F;
+  top: 15px;
+  transition-duration: 0.5s;
+}
 /* make the burrrrrger */
 .burg{
-  /* border: 1px solid tomato; */
   width: 37px;
   height: 30px;
   display: block;
 
 }
 .norm_burger{
-  /* background-color: green; */
   width: 100%;
   height: 100%;
   display: block;
   background-color:#222222;
-  /* border: 1px solid white; */
   position: relative;
 }
 .norm_burger::before{
@@ -148,6 +169,7 @@ header{
   position: absolute;
   top: 2px;
   left: 0px;
+  transition-duration: 1s;
 
 }
 .norm_burger::after{
@@ -158,6 +180,7 @@ header{
   position: absolute;
   top: 25px;
   left: 0px;
+  transition-duration: 1s;
 
 }
 .middel-line{
@@ -167,18 +190,91 @@ header{
   position: absolute;
   top: 13.5px;
   left: 0px;
+  transition-duration: 1s;
 }
-.norm_burger:hover .middel-line{
+.norm_burger.activee .middel-line{
   display: none;
 }
- .norm_burger:hover::after{
+ .norm_burger.activee::after{
   transform: rotate(45deg);
   top: 16px;
+  transition-duration: 1s;
 
 }
-.norm_burger:hover::before{
+.norm_burger.activee::before{
  transform: rotate(-45deg);
  top: 15px;
+ transition-duration: 1s;
+}
+.menu.activee{
+ background-color: white;
+ box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+ right: 0;
+ visibility: visible;
+ transition-duration: 1s;
+ right: 0;
+ top: 75px;
+}
+.menu{
+ width: 14%;
+ height: 764px;
+ background-color: #F1E4E6;
+ display: flex;
+ justify-content: center;
+ position: absolute;
+ right: 0;
+ z-index: 15;
+ top: -1000px;
+ visibility:hidden;
+ transition-duration: 0.5s;
+}
+.menu_x{
+ position: relative;
+ margin-top: 16px;
+}
+.menu_cross{
+ background-color: white;
+}
+
+
+.menu_content{
+ width: 70%;
+ margin-top: 37px;
+ display: flex;
+ flex-direction:row;
+}
+.title_menu{
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 17px;
+ color: #000000;
+ text-transform: uppercase;
+ margin-bottom: 24px;
+
+}
+.sex{
+ font-size: 14px;
+ line-height: 17px;
+ color: #F16D7F;
+ text-transform: uppercase;
+ display:block;
+ margin-bottom: 12px;
+}
+ul {
+
+ padding-left: 20px;
+}
+.menu_item{
+ margin-bottom: 11px;
+}
+ul li.menu_item:last-child{
+ margin-bottom: 20px;
+}
+ul li a{
+ font-size: 14px;
+ line-height: 17px;
+ color: #6F6E6E;
+
 }
 
 .circle{
@@ -415,67 +511,7 @@ ul li{
 
 
 /* Меню */
-.hover:hover ~ .menu{
-  background-color: white;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
-  right: 0;
-  visibility: visible;
-}
-.menu{
-  width: 14%;
-  height: 764px;
-  background-color: #F1E4E6;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right: 0;
-  top: 75px;
-  visibility:hidden;
-}
-.menu_x{
-  position: relative;
-  margin-top: 16px;
-}
 
-.menu_content{
-  width: 70%;
-  margin-top: 37px;
-  display: flex;
-  flex-direction:row;
-}
-.title_menu{
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-
-}
-.sex{
-  font-size: 14px;
-  line-height: 17px;
-  color: #F16D7F;
-  text-transform: uppercase;
-  display:block;
-  margin-bottom: 12px;
-}
-ul {
-
-  padding-left: 20px;
-}
-.menu_item{
-  margin-bottom: 11px;
-}
-ul li.menu_item:last-child{
-  margin-bottom: 20px;
-}
-ul li a{
-  font-size: 14px;
-  line-height: 17px;
-  color: #6F6E6E;
-
-}
 
 /* hover effect Для карточек */
 .section_cards_item_text{
@@ -720,6 +756,10 @@ fill:black;
     font-size: 44px;
 
   }
+  .search_input{
+    left: 150px;
+    left: 171px;
+  }
   .title_header h1, .title_header_pink{
     font-size: 24px;
     line-height: 44px;
@@ -817,6 +857,13 @@ fill:black;
     width: 95%;
   }
 
+
+}
+@media (max-width:530px) {
+  .search_input{
+    left: 155px;
+    width: 130px;
+  }
 }
 @media (max-width:668px) {
   .profile,.cart,.circle{
@@ -1494,8 +1541,12 @@ fill:black;
 .product_cross{
   padding: 28px 22px 0px 0px;
 }
+.delete_item{
+  background-color: white;
+}
 .products_cart_item:first-child{
   margin-bottom: 40px;
+  
 }
 .product_button_content{
   display: flex;
