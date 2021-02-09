@@ -7,7 +7,7 @@ function clik() {
   a.classList.toggle("activee")
   b.classList.toggle("activee")
   c.classList.toggle("activee")
-  z.classList.toggle("lock")
+  // z.classList.toggle("lock")
 
 }
 function clike() {
