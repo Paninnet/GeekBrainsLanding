@@ -2067,6 +2067,9 @@ transition-duration: 1s;
     font-size: 16px;
     line-height: 19px;
   }
+  .loyal_program li::before{
+    margin-top: 0px;
+  }
 
 
 }
