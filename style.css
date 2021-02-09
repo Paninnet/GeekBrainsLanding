@@ -133,7 +133,7 @@ header{
   height: 39px;
 }
 .search_input{
-  border: 1px solid blue;
+  border-radius: 15px;
   height: 39px;
   position: absolute;
   left: 300px;
@@ -904,14 +904,26 @@ fill:black;
     width: 130px;
   }
 }
-@media (max-width:414px) {
+
+@media (max-width:350px) {
+  .search_input{
+    height: 34px;
+    width: 90px;
+  }
+}
+
+@media (max-width:668px) {
+
+  body.lock{
+    overflow: hidden;
+  }
   .menu.activee{
     transition-duration: 1.5s;
-    position:absolute;
+    position:fixed;
     top: 75px;
     left: 0;
     z-index: 30;
-    overflow: hidden;
+    overflow:scroll;
     height: 100vh;
   }
   .menu{
@@ -922,16 +934,6 @@ fill:black;
   .menu_x{
     display: none;
   }
-}
-
-@media (max-width:350px) {
-  .search_input{
-    height: 34px;
-    width: 90px;
-  }
-}
-
-@media (max-width:668px) {
   .profile,.cart,.circle{
     display: none;
   }

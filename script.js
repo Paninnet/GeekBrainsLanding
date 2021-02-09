@@ -2,10 +2,12 @@ function clik() {
   let a= document.querySelector('.norm_burger')
   let b= document.querySelector('.menu')
   let c= document.querySelector('.menu_cross')
+  let z= document.querySelector('body')
 
   a.classList.toggle("activee")
   b.classList.toggle("activee")
   c.classList.toggle("activee")
+  z.classList.toggle("lock")
 
 }
 function clike() {
