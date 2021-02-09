@@ -27,3 +27,8 @@ function delete_all() {
   let a =document.querySelector('.products_cart')
   a.remove(a);
 }
+
+function filterr() {
+  let a= document.querySelector('.main_filter')
+  a.classList.toggle("activee")
+}
