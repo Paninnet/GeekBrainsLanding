@@ -275,16 +275,15 @@ padding-left: 64px;
 }
 
 /* Продолжаем верстать */
-.section_cards{
+.section_cards {
   width: 77%;
-
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.section_cards_item{
+.section_cards_item ,.section_cards_itemp{
   width: 31.5%;;
   background-color: #F8F8F8;
   margin-top: 30px;
@@ -641,6 +640,9 @@ ul li a{
 background-color: #F16D7F;
 fill:black;
 }
+.section_cards_item:nth-child(2) ,.section_cards_item:nth-child(3){
+  margin-top: 0px;
+}
 
 
 
@@ -690,16 +692,17 @@ fill:black;
   .section_cards{
     width: 95%;
   }
-  .section_cards_item{
+  .section_cards_item ,.section_cards_itemp{
     width: 48.5%;
     margin-top: 17px;
   }
   .section_cards_item:first-child{
     margin-top: 0px;
   }
-  .section_cards_item:nth-child(2){
-    margin-top: 0px;
+  .section_cards_item:nth-child(3){
+    margin-top: 17px;
   }
+
   .first_button{
     margin-bottom: 65px;
   }
@@ -860,6 +863,9 @@ fill:black;
   margin-top: 43px;
   margin-bottom: 50px;
 }
+.section_cards_item:nth-child(2){
+  margin-top: 17px;
+}
 }
 .footer_text{
   margin-bottom: 9px;
@@ -982,7 +988,7 @@ fill:black;
 .section_cards_item_img9_9{
   background-image: url(./img/nineofnine.png);
 }
-.section_cards_item:first-child, .section_cards_item:nth-child(2), .section_cards_item:nth-child(3){
+.section_cards_item:first-child{
   margin-top: 0px;
 }
 .pages{
@@ -1249,6 +1255,9 @@ fill:black;
   margin-top: 32px;
   margin-bottom: 65px;
 }
+.section_cards_itemp{
+  margin-top: 0px;
+}
 .main_section_hr{
   display: block;
   height: 2px;
@@ -1317,13 +1326,15 @@ fill:black;
 .section_cards_item_img_prod_3{
   background-image: url(./img/sixofsix.png);
 }
-@media (max-width:1024px) {
+
+@media (max-width:1026px) {
   .filters_container{
     width: 60%;
   }
   .product_none{
     display: none;
   }
+
 }
 @media (max-width:668px) {
   .product_tel{
@@ -1348,6 +1359,9 @@ fill:black;
   .section_cards_product{
     margin-top: 34px;
     margin-bottom: 64px;
+  }
+  .section_cards_itemp{
+    width: 100%;
   }
 
 }
