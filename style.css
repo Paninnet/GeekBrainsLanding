@@ -681,6 +681,7 @@ ul li{
   line-height: 167.2%;
   text-align: center;
   color: #222224;
+  text-transform: uppercase;
 }
 .subscribe_content_right_p{
   font-weight: normal;
@@ -688,6 +689,7 @@ ul li{
   line-height: 167.2%;
   text-align: center;
   color: #222224;
+  text-transform: uppercase;
 }
 .inputButton{
   margin-top: 32px;
@@ -750,20 +752,8 @@ background-color: #F16D7F;
 fill:black;
 }
 
-
-
 /* Адаптив */
-/* @media (min-width:2100px) {
-  .search_input{
-    left: 571px;
-  }
-}
 
-@media (max-width:1440px) {
-  .search_input{
-    left: 371px;
-  }
-} */
 @media (min-width:1440px) {
   .search_input{
     left: 371px;
@@ -792,7 +782,10 @@ fill:black;
   }
   .menu{
     display: flex;
-    width: 20%;
+    width: 100%;
+  }
+  .menu_x{
+    display: none;
   }
   .title_header_bold{
     font-size: 44px;
