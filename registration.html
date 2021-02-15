@@ -16,7 +16,7 @@
               <a href="index.html"><img src="img/ok.png" alt="Главная"></a>
               <div class="search_icon">
                 <button onclick="clike()" class="search_button" type="button" name="button"><img class="search_img" src="img/search.png" alt="Поиск"></a></button>
-                <input class="search_input" type="search" name="" value="">
+                <input class="search_input" type="search" >
               </div>
 
             </div>
@@ -84,20 +84,17 @@
                 <div class="radio">
                   <div class="men">
                     <input id="men"  type="radio" name="sex" value="1">
-                    <label class="trans" for="men">Male</label>
+                    <label class="trans"  onclick="rad()" for="men">Male</label>
                   </div>
                   <div class="female">
                     <input id="female" type="radio" name="sex" value="2">
-                    <label class="trans" for="female">Female</label>
+                    <label class="trans" onclick="rad()" for="female">Female</label>
                   </div>
                   <div class="others">
                     <input id="other"  type="radio" name="sex" value="3">
-                    <label class="trans" for="other">Other</label>
+                    <label class="trans" onclick="rad()" for="other">Other</label>
                   </div>
                 </div>
-
-
-
               </form>
               <p class="form_text">Login Details</p>
               <input  class="adress" type="email"  placeholder="Email">
@@ -123,11 +120,6 @@
 
         </div>
 
-
-
-        <!-- Продолжаем верстать -->
-
-
         <div class="quality">
 
           <div class="subscribe">
@@ -141,10 +133,10 @@
 
               </div>
               <div class="subscribe_content_right">
-                  <p class="subscribe_content_right_title">SUBSCRIBE</p>
-                  <p class="subscribe_content_right_p">FOR OUR NEWLETTER AND PROMOTION</p>
+                  <p class="subscribe_content_right_title">subscribe</p>
+                  <p class="subscribe_content_right_p">for our newletter and promotion</p>
                 <div class="inputButton">
-                  <input  class="inputMail"type="email" name="" value="" placeholder="Enter Your Email">
+                  <input  class="inputMail"type="email" placeholder="Enter Your Email">
                   <button class="inputInput"type="submit" name="button">Subscribe</button>
 
                 </div>
