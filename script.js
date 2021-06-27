@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () =>{
+
   // Menu
   let menu = document.querySelector(".menu")
 
@@ -22,6 +23,34 @@ window.addEventListener("DOMContentLoaded", () =>{
     })
 
   })
+
+  // Cart
+  let allProducts = document.querySelectorAll('.products_cart_item')
+  let allProductsLength = document.getElementsByClassName('products_cart_item')
+  document.querySelector('.circle').querySelector('p').innerHTML = allProductsLength.length
+  let clearButton = document.querySelector(".clear")
+  clearButton.addEventListener ('click', (e) =>{
+    allProducts .forEach (item =>{
+      item.remove()
+    })
+    document.querySelector('.circle').querySelector('p').innerHTML = allProductsLength.length
+    e.target.remove()
+    document.querySelector('.cost').remove()
+  })
+
+  let delete_item = document.querySelectorAll('.delete_item').forEach (item =>{
+    item.addEventListener('click' , () =>{
+      item.parentNode.parentNode.remove()
+      document.querySelector('.circle').querySelector('p').innerHTML = allProductsLength.length
+      if (allProductsLength.length == 0){
+        document.querySelector('.cost').remove()
+        clearButton.remove()
+      }
+    })    
+  })
+
+  
+ 
 
 })
 // function clik() {
